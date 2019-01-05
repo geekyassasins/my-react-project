@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20%;
+    overflow: hidden;
+    background-color: #d0d3d4
+;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #48c9b0;
+}
+
+.active {
+color:white;
+    background-color:  #48c9b0 ;
+}
+span {
+  content: "\2713";
+}
+p {
+  float: left;
+    padding-top: 5%;
+    padding-right: 80px;
+    padding-bottom: 150px;
+    padding-left: 150px;
+}
+input[type=text] {
+    
+    padding: 12px 150px;
+    
+    box-sizing: border-box;
+    border: none;
+    background-color:#d0d3d4 ;
+    color: black;
+}
+button {
+    background-color: #48c9b0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+
+</style>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+	<ul>
+  <span><li><a class="active" href="index.html"><span>&#10003;&nbsp&nbspIntroduction</a></li></span>
+  <li><a href="person.html"><span>&#10003;&nbsp&nbspPersonal Information</a></li></span>
+  <li><a href="#news"><span>&#10003;&nbsp&nbspContact</a></li></span>
+  
+</ul>
+
+<p> <i class="fa fa-user-circle" style="font-size:150px;color:#48c9b0 "></i></p>
+
+ <br><br><br>
+<form>
+  <label for="fname">Your Name</label><br>
+<input type="text" id="fname" name="fname" >
+</form>
+<br><br><br><br>
+<form>
+  <label for="fname">Write a short note description about yourself</label><br>
+<input type="text" style="height:190px" id="fname" name="fname" >
+</form>
+<br><br><br><br><center>
+<button onclick="document.getElementById('id01').style.display='block'" href="person.html" style="width:auto;">Proceed</button>
+
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
